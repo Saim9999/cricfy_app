@@ -224,10 +224,9 @@ class _TeamRankingState extends State<TeamRanking> {
           ),
           toolbarHeight: 90.h,
           bottom: TabBar(
-            indicator: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Color.fromARGB(255, 114, 255, 48),
-            ),
+            indicatorColor: Color.fromARGB(255, 114, 255, 48),
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.white12,
             tabs: [
               Tab(
                 child: Text(

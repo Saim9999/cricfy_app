@@ -484,16 +484,16 @@ class _CompleteScoreState extends State<CompleteScore> {
                             child: ListTile(
                               visualDensity: VisualDensity.compact,
                               leading: InkWell(
-                                onTap: () async{
-                                   // Launch the player's profile URL in the web browser
-                            var playerProfileUri = Uri.parse(
-                              'https://www.cricbuzz.com/${item.playerprofileurl}',
-                            );
-                            if (await canLaunchUrl(playerProfileUri)) {
-                              await launchUrl(playerProfileUri);
-                            } else {
-                              print("Could not launch player profile.");
-                            }
+                                onTap: () async {
+                                  // Launch the player's profile URL in the web browser
+                                  var playerProfileUri = Uri.parse(
+                                    'https://www.cricbuzz.com/${item.playerprofileurl}',
+                                  );
+                                  if (await canLaunchUrl(playerProfileUri)) {
+                                    await launchUrl(playerProfileUri);
+                                  } else {
+                                    print("Could not launch player profile.");
+                                  }
                                 },
                                 child: CircleAvatar(
                                   backgroundImage: NetworkImage(
@@ -957,6 +957,8 @@ class _CompleteScoreState extends State<CompleteScore> {
                     ),
                   ),
           bottom: TabBar(
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.white10,
             indicatorColor: const Color.fromARGB(255, 114, 255, 48),
             tabs: [
               Tab(

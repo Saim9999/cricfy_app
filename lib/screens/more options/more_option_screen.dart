@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import 'award_list_screen.dart';
 import 'schedule_screen.dart';
 import 'team_ranking.dart';
 
@@ -266,6 +267,45 @@ class _MoreOptionScreenState extends State<MoreOptionScreen> {
                   ],
                 ),
               ),
+              SizedBox(height: 10.h),
+              InkWell(
+                onTap: () {
+                  Get.to(AwardListScreen());
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8, right: 8),
+                  child: Container(
+                    height: 50.h,
+                    decoration: BoxDecoration(
+                      color: Colors.black54,
+                      borderRadius: BorderRadius.circular(8.r),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 15),
+                          child: Text(
+                            'ICC Awards 2024',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16.sp,
+                              fontFamily: 'Mulish-ExtraBold',
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(right: 15),
+                          child: Icon(
+                            Icons.navigate_next_rounded,
+                            color: Color.fromARGB(255, 114, 255, 48),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),

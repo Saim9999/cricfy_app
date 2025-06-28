@@ -68,6 +68,7 @@ class TabBarScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Color.fromARGB(255, 15, 19, 1),
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20),
@@ -80,6 +81,8 @@ class TabBarScreen extends StatelessWidget {
           toolbarHeight: 90.h,
           bottom: TabBar(
             indicatorColor: Color.fromARGB(255, 114, 255, 48),
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.white12,
             tabs: [
               Tab(
                 child: Text(

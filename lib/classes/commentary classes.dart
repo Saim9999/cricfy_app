@@ -3,10 +3,7 @@ class TeamScore {
   final String teamscorefirst;
   final String teamscoreSecond;
 
-  TeamScore({
-    required this.teamscorefirst,
-    required this.teamscoreSecond,
-  });
+  TeamScore({required this.teamscorefirst, required this.teamscoreSecond});
 }
 
 // for current runrate
@@ -26,10 +23,7 @@ class PlayerOfMatch {
   final String playerMotmLabel;
   final String playerMotmValue;
 
-  PlayerOfMatch({
-    required this.playerMotmLabel,
-    required this.playerMotmValue,
-  });
+  PlayerOfMatch({required this.playerMotmLabel, required this.playerMotmValue});
 }
 
 // for Player of the series
@@ -72,7 +66,6 @@ class PlayerData {
   final String fours;
   final String sixes;
   final String strikerate;
-  
 
   PlayerData({
     required this.playername,
@@ -142,9 +135,7 @@ class TimelineData {
 class KeyStatsData {
   final String keystatsLabel;
 
-  KeyStatsData({
-    required this.keystatsLabel,
-  });
+  KeyStatsData({required this.keystatsLabel});
 }
 
 // for live screen classes
@@ -292,5 +283,28 @@ class T20TeamRankingInfo {
     required this.teamName,
     required this.teamRating,
     required this.teamPoints,
+  });
+}
+
+// for award of the year
+class AwardofYearInfo {
+  final String awardTitle;
+  final String firstName;
+  final String lastName;
+  final String img;
+  final String flag;
+  final String runs;
+  final String wickets;
+  final String catches;
+
+  AwardofYearInfo({
+    required this.awardTitle,
+    required this.firstName,
+    required this.lastName,
+    required this.img,
+    required this.flag,
+    required this.runs,
+    required this.wickets,
+    required this.catches,
   });
 }

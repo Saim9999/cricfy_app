@@ -1,4 +1,3 @@
-import 'package:crickfy_app/screens/main_home_screen.dart';
 import 'package:crickfy_app/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
