@@ -426,17 +426,6 @@ class _CompleteScoreState extends State<CompleteScore> {
     await scorecardMatches();
   }
 
-  // void _openplayerProfile(String profileUrl) async {
-  //   // Launch the player's profile URL in the web browser
-  //   var profileUri = Uri.parse(profileUrl);
-  //   if (await canLaunchUrl(profileUri)) {
-  //     await launchUrl(profileUri);
-  //     print('url profile: $profileUri');
-  //   } else {
-  //     throw 'Could not launch $profileUrl';
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(

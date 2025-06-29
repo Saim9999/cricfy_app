@@ -194,10 +194,20 @@ class _AwardListScreenState extends State<AwardListScreen> {
                                         borderRadius: BorderRadius.circular(
                                           12.r,
                                         ),
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: NetworkImage(awardItem.img),
-                                        ),
+                                        color:
+                                            (awardItem.img.isEmpty)
+                                                ? Colors
+                                                    .blue // fallback color
+                                                : null,
+                                        image:
+                                            (awardItem.img.isNotEmpty)
+                                                ? DecorationImage(
+                                                  fit: BoxFit.cover,
+                                                  image: NetworkImage(
+                                                    awardItem.img,
+                                                  ),
+                                                )
+                                                : null,
                                         border: Border.all(
                                           color: Color.fromARGB(
                                             255,
@@ -275,7 +285,8 @@ class _AwardListScreenState extends State<AwardListScreen> {
                                             children: [
                                               Row(
                                                 mainAxisAlignment:
-                                                    MainAxisAlignment.spaceAround,
+                                                    MainAxisAlignment
+                                                        .spaceAround,
                                                 children: [
                                                   Column(
                                                     children: [
@@ -288,7 +299,9 @@ class _AwardListScreenState extends State<AwardListScreen> {
                                                           'Mulish-ExtraBold',
                                                         ),
                                                       ),
-                                                      if (awardItem.runs.isNotEmpty)
+                                                      if (awardItem
+                                                          .runs
+                                                          .isNotEmpty)
                                                         Text(
                                                           'Runs',
                                                           style: textMethod(

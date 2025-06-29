@@ -45,6 +45,8 @@ dependencies:
   intl: ^0.18.1
   carousel_slider: 4.2.0
   loading_animation_widget: ^1.2.0+4
+  flutter_launcher_icons: ^0.14.4
+  connectivity_plus: ^6.0.3
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +58,14 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+
+flutter_icons:
+    android: true
+    ios: true
+    image_path: "assets/icon/crickfy_logotext.png"
+    adaptive_icon_foreground: "assets/icon/crickfy_logotext.png"
+    adaptive_icon_background: "#0F1301"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
