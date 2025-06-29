@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:crickfy_app/screens/main_home_screen.dart';
 import 'package:crickfy_app/screens/internet_check.dart';
 import 'package:flutter/material.dart';
